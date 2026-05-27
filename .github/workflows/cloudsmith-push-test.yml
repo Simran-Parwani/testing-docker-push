@@ -19,12 +19,12 @@ jobs:
           password: ${{ secrets.EA_CLOUDSMITH_API_KEY }}
 
       - name: Pull test image
-        run: docker pull nginx:latest
+        run: docker pull alpine:latest
 
       - name: Tag image
         run: |
-          docker tag nginx:latest docker.cloudsmith.io/simran-parwani-testorg/docker/test-image:debug-test
+          docker tag alpine:latest docker.cloudsmith.io/simran-parwani-testorg/docker/test-image:debug-test1
 
       - name: Push image
         run: |
-          docker push docker.cloudsmith.io/simran-parwani-testorg/docker/test-image:debug-test
+          docker push docker.cloudsmith.io/simran-parwani-testorg/docker/test-image:debug-test1
