@@ -27,4 +27,4 @@ jobs:
 
       - name: Push image
         run: |
-          docker push docker.cloudsmith.io/adi/eai-eng-assistant/test-image:debug-test
+          docker push docker.cloudsmith.io/simran-parwani-testorg/docker/test-image:debug-test
