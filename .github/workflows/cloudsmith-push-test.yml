@@ -23,7 +23,7 @@ jobs:
 
       - name: Tag image
         run: |
-          docker tag nginx:latest docker.cloudsmith.io/adi/eai-eng-assistant/test-image:debug-test
+          docker tag nginx:latest docker.cloudsmith.io/simran-parwani-testorg/docker/test-image:debug-test
 
       - name: Push image
         run: |
